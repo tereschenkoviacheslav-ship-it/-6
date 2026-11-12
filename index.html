@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>МикроСхема — магазин микроэлектроники</title>
+  <meta name="description" content="Компоненты, модули и наборы для разработки: Arduino, ESP32, STM32, датчики, микросхемы. Доставка по России.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a class="logo" href="#top">
+        <span class="logo__mark">μ</span>
+        <span class="logo__text">МикроСхема</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#catalog">Каталог</a></li>
+          <li class="nav__item"><a class="nav__link" href="#features">Почему мы</a></li>
+          <li class="nav__item"><a class="nav__link" href="#footer">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a class="button button_view_ghost header__cta" href="#catalog">В каталог</a>
+    </div>
+  </header>
+
+  <main class="main" id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <p class="hero__badge">Более 12 000 позиций в наличии</p>
+          <h1 class="hero__title">Микроэлектроника для ваших проектов</h1>
+          <p class="hero__subtitle">
+            Микросхемы, модули, датчики и отладочные платы — от единичных деталей
+            до серийных поставок. Отправляем в день заказа.
+          </p>
+          <div class="hero__actions">
+            <a class="button button_view_primary" href="#catalog">Смотреть каталог</a>
+            <a class="button button_view_ghost" href="#features">Подробнее</a>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="chip">
+            <span class="chip__pin">VCC</span>
+            <div class="chip__body">
+              <span class="chip__label">ESP32</span>
+              <span class="chip__sub">Wi-Fi · BLE</span>
+            </div>
+            <span class="chip__pin chip__pin_side_bottom">GND</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КАТЕГОРИИ -->
+    <section class="catalog" id="catalog">
+      <div class="section-head">
+        <h2 class="section-head__title">Категории</h2>
+        <p class="section-head__text">Выберите раздел каталога</p>
+      </div>
+
+      <div class="catalog__grid">
+        <article class="card">
+          <div class="card__icon">⚡</div>
+          <h3 class="card__title">Микроконтроллеры</h3>
+          <p class="card__text">STM32, AVR, ESP32, RP2040 — от 8-битных до 32-битных.</p>
+          <span class="card__price">от 190 ₽</span>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">🔌</div>
+          <h3 class="card__title">Модули</h3>
+          <p class="card__text">Реле, DC-DC, Wi-Fi, GSM, Bluetooth, GPS-приёмники.</p>
+          <span class="card__price">от 120 ₽</span>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">🌡️</div>
+          <h3 class="card__title">Датчики</h3>
+          <p class="card__text">Температура, влажность, давление, газ, ток, освещённость.</p>
+          <span class="card__price">от 75 ₽</span>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">🧩</div>
+          <h3 class="card__title">Платы Proto</h3>
+          <p class="card__text">Макетные платы, переходники, шилды, соединители.</p>
+          <span class="card__price">от 90 ₽</span>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">🔬</div>
+          <h3 class="card__title">Компоненты</h3>
+          <p class="card__text">Резисторы, конденсаторы, диоды, транзисторы, разъёмы.</p>
+          <span class="card__price">от 2 ₽</span>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">🛠️</div>
+          <h3 class="card__title">Наборы</h3>
+          <p class="card__text">Стартовые комплекты для обучения и DIY-проектов.</p>
+          <span class="card__price">от 890 ₽</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="features" id="features">
+      <div class="section-head">
+        <h2 class="section-head__title">Почему инженеры выбирают нас</h2>
+      </div>
+
+      <div class="features__grid">
+        <div class="feature">
+          <span class="feature__num">01</span>
+          <h3 class="feature__title">Оригинал или возврат</h3>
+          <p class="feature__text">Проверяем партии, работаем с официальными дистрибьюторами.</p>
+        </div>
+        <div class="feature">
+          <span class="feature__num">02</span>
+          <h3 class="feature__title">Отправка в день заказа</h3>
+          <p class="feature__text">Заказы до 15:00 уходят в тот же день. СДЭК, Почта, ПВЗ.</p>
+        </div>
+        <div class="feature">
+          <span class="feature__num">03</span>
+          <h3 class="feature__title">Даташиты и примеры</h3>
+          <p class="feature__text">К каждой позиции — документация и рабочий пример кода.</p>
+        </div>
+        <div class="feature">
+          <span class="feature__num">04</span>
+          <h3 class="feature__title">Поддержка инженеров</h3>
+          <p class="feature__text">Поможем подобрать аналог и подскажем по схеме включения.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="cta__inner">
+        <h2 class="cta__title">Нужен компонент, которого нет в каталоге?</h2>
+        <p class="cta__text">Привезём под заказ от 1 штуки. Ответим в течение дня.</p>
+        <a class="button button_view_primary" href="#footer">Оставить заявку</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a class="logo logo_theme_dark" href="#top">
+          <span class="logo__mark">μ</span>
+          <span class="logo__text">МикроСхема</span>
+        </a>
+        <p class="footer__desc">Магазин микроэлектроники. Работаем с 2014 года.</p>
+      </div>
+
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h3 class="footer__title">Магазин</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="#catalog">Каталог</a></li>
+            <li class="footer__item"><a class="footer__link" href="#features">Доставка</a></li>
+            <li class="footer__item"><a class="footer__link" href="#footer">Гарантия</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__title">Контакты</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="mailto:hello@microshema.ru">hello@microshema.ru</a></li>
+            <li class="footer__item"><a class="footer__link" href="tel:+70000000000">+7 000 000-00-00</a></li>
+            <li class="footer__item"><a class="footer__link" href="#top">Telegram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 МикроСхема. Все права защищены.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
